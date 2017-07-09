@@ -73,7 +73,7 @@ we can configure vscode internal terminal to use powerline font by:
 - In Preferences > Settings > Add the following line if you used Meslo included font, otherwise change the font name to be exactly as it shows in your fontBook.app: `"terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline"`
 
 - In Preferences > Settings > Add the following lines:
-  - `"terminal.integrated.shell.osx": "./code-shell",`
+  - `"terminal.integrated.shell.osx": "/Users/{{YOUR_USERNAME}}/code-shell",`
   - `"terminal.integrated.shellArgs.osx": ["-l"]`
 
 ### vscode settings file

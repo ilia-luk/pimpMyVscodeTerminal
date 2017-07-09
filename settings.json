@@ -1,0 +1,9 @@
+// Place your settings in this file to overwrite the default settings
+{
+   // "terminal.external.osxExec": "Iterm.app",
+    "terminal.integrated.shell.osx": "./code-shell",
+    "terminal.integrated.shellArgs.osx": [
+        "-l"
+    ],
+    "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline"
+}

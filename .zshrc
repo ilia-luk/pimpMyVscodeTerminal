@@ -53,7 +53,7 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias hostsfile="vim /etc/hosts"
 
 # Add personal bin to $PATH and nodenv.
-export PATH="/mongodb/bin:$HOME/.rvm/bin:$HOME/.nodenv/bin:$HOME/.nodenv/completions/nodenv.zsh:$HOME/.nodenv/shims:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/mongodb/bin:$HOME/.nodenv/bin:$HOME/.nodenv/completions/nodenv.zsh:$HOME/.nodenv/shims:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # Share commands history
 HISTFILE=~/.zsh_history # Set the filename to save history to
@@ -69,9 +69,6 @@ HISTCONTROL='ignoreboth'
 # temporary
 unset GREP_OPTIONS
 alias grep='grep --color=auto'
-
-# Git completion
-autoload -U compinit && compinit
 
 # Z
 . `brew --prefix`/etc/profile.d/z.sh

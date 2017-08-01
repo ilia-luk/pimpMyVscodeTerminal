@@ -77,6 +77,10 @@ we can configure vscode internal terminal to use powerline font by:
 - In Preferences > Settings > Add the following lines:
   - `"terminal.integrated.shell.osx": "/Users/{{YOUR_USERNAME}}/code-shell",`
   - `"terminal.integrated.shellArgs.osx": ["-l"]`
+  
+ - restart vscode and open internal terminal by pressing <kbd>ctrl</kbd> + <kbd>~</kbd>
+ 
+ - uncomment last line from ```~/.tmux.conf```
 
 ### vscode settings file
 

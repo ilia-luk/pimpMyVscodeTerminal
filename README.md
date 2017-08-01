@@ -1,6 +1,6 @@
 # pimp my terminal
 
-version: 0.2.0
+version: 0.2.1
 
 ## main goal is to pretify macs default terminal.app and turn vscode internal terminal into a predefined tmux session
 

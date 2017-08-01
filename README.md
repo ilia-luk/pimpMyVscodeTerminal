@@ -34,13 +34,15 @@ git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugi
 
 ### .zshrc, .tmux.conf and start.sh configurations and init script
 
-- copy included `.zshrc` file to `~/.zshrc`.
+copy included `.zshrc`, `.tmux.conf`, `code-shell` and `tmux.dev.sh` files to `~/`.
 
-- copy included `.tmux.conf` file to `~/.tmux.conf`.
+- ``` mv .zshrc ~/.zshrc ```
 
-- copy included `code-shell` file to `~/code-shell`.
+- ``` mv .tmux.conf ~/.tmux.conf ```
 
-- copy included `tmux.dev.sh` file to `~/tmux.dev.sh`.
+- ``` mv code-shell ~/code-shell ```
+
+- ``` mv tmux.dev.sh ~/tmux.dev.sh ```
 
 ### make code-shell and tmux.dev.sh executables
 

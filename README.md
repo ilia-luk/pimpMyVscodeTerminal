@@ -3,6 +3,7 @@
 version: 0.2.1
 
 ## main goal is to pretify macs default terminal.app and turn vscode internal terminal into a predefined tmux session
+![terminal example](http://res.cloudinary.com/domusnetwork/image/upload/v1504856413/Screenshot_2017-09-08_10.35.54.png)
 
 ### Install Homebrew
 

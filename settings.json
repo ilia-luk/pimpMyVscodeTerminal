@@ -1,16 +1,5 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.tabSize": 2,
-    "window.zoomLevel": 1,
-    "workbench.colorTheme": "One Dark Pro",
-    "workbench.iconTheme": "file-icons",
-    "workbench.sideBar.location": "right",
-    "tfvc.location": "/usr/local/Cellar/tee-clc/14.120.0/bin/tf",
-    "team.showWelcomeMessage": false,
-    "stylelint.enable": true,
-    "css.validate": false,
-    "scss.validate": false,
-    "editor.tabSize": 2,
     "terminal.integrated.shell.osx": "/Users/<<YOUR_USER>>/code-shell",
     "terminal.integrated.shellArgs.osx": [
         "-l"

@@ -15,6 +15,8 @@ version: 0.2.1
 ### Install rest of packages
 
 ```shell
+brew install wget
+
 brew install git
 
 brew install zsh
@@ -27,11 +29,11 @@ brew install htop
 
 brew install nodenv
 
-curl -L http://install.ohmyz.sh | sh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 ### .zshrc, .tmux.conf and start.sh configurations and init script
@@ -79,9 +81,9 @@ we can configure vscode internal terminal to use powerline font by:
 - In Preferences > Settings > Add the following lines:
   - `"terminal.integrated.shell.osx": "/Users/{{YOUR_USERNAME}}/code-shell",`
   - `"terminal.integrated.shellArgs.osx": ["-l"]`
-  
+
  - restart vscode and open internal terminal by pressing <kbd>ctrl</kbd> + <kbd>~</kbd>
- 
+
  - uncomment last line from ```~/.tmux.conf```
 
 ### vscode settings file

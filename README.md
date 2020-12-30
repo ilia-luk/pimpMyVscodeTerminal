@@ -7,6 +7,7 @@ version: 0.2.2 (supports tmux 2.9)
 This is a WIP, feel free to send PR's and make it better
 
 ---
+
 ![terminal example](http://res.cloudinary.com/domusnetwork/image/upload/v1504856413/Screenshot_2017-09-08_10.35.54.png)
 ![vscode example](http://res.cloudinary.com/domusnetwork/image/upload/v1504856690/Screenshot_2017-09-08_10.43.47_2.png)
 
@@ -43,14 +44,13 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ### .zshrc, .tmux.conf and start.sh configurations and init script
 
 clone or download this repository and browse from your terminal to it,
-next we need to copy included `.zshrc`, `.tmux.conf`, `code-shell`, `z.sh` and `tmux.dev.sh` files to `~/` (home directory)
+next we need to copy included `.zshrc`, `.tmux.conf`, `code-shell`, and `tmux.dev.sh` files to `~/` (home directory)
 by running the following commands:
 
-- ```mv .zshrc ~/.zshrc```
-- ```mv .tmux.conf ~/.tmux.conf```
-- ```mv code-shell ~/code-shell```
-- ```mv z.sh ~/z.sh```
-- ```mv tmux.dev.sh ~/tmux.dev.sh```
+- `mv .zshrc ~/.zshrc`
+- `mv .tmux.conf ~/.tmux.conf`
+- `mv code-shell ~/code-shell`
+- `mv tmux.dev.sh ~/tmux.dev.sh`
 
 ### make code-shell and tmux.dev.sh executables
 
@@ -66,11 +66,11 @@ by running the following commands:
 
 first we need to change some settings in our terminal.app, set whichever font you chose earlier to serve as your default font in the terminal.app and install the color scheme, in order to do so follow this steps:
 
-- In Preferences > Profiles > Add new profile by pressing the cog at the bottom left corner, from the drop down select import and chose the included ```smyck.terminal``` file.
+- In Preferences > Profiles > Add new profile by pressing the cog at the bottom left corner, from the drop down select import and chose the included `smyck.terminal` file.
 
-- select it from the above list, press the cog again and select ```Duplicate profile```.
+- select it from the above list, press the cog again and select `Duplicate profile`.
 
-- give it a `{{CUSTOM_PROFILE_NAME}}` and make sure it's selected, then press ```Default``` from the bottom menu near the cog.
+- give it a `{{CUSTOM_PROFILE_NAME}}` and make sure it's selected, then press `Default` from the bottom menu near the cog.
 
 - On the right settings pane, look for the `Text` tab and under `Font` section press `change`, you can change the default font to a powerline font like the included `Meslo LG M DZ Regular for Powerline`, dont forget to chose `regularForPowerline` typeface and change size to `12`
 

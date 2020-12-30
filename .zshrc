@@ -20,7 +20,10 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(h git github docker docker-compose vundle vi-mode tmux npm node themes colored-man-pages colorize zsh-syntax-highlighting zsh-autosuggestions zsh-completions)
+plugins=(git github docker docker-compose vundle vi-mode tmux npm node themes colored-man-pages colorize zsh-syntax-highlighting zsh-autosuggestions zsh-completions)
+
+# zsh-completions settings
+autoload -U compinit && compinit
 
 # Zsh auto-suggestion style
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=3"

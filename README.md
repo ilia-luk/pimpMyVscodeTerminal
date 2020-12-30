@@ -1,6 +1,6 @@
 # pimp my terminal
 
-version: 0.2.2 (supports tmux 3.1c)
+version: 0.3.1 (supports tmux 3.1c)
 
 ## main goal is to pretify macs default terminal.app and turn vscode internal terminal into a predefined tmux session
 
@@ -34,11 +34,22 @@ brew install z
 
 brew install htop
 
+brew install thefuck
+
+brew install nodenv
+
+nodenv install ${NODE_VERSION}
+
+nodenv global ${NODE_VERSION}
+
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+
 ```
 
 ### .zshrc, .tmux.conf and start.sh configurations and init script
@@ -77,6 +88,8 @@ first we need to change some settings in our terminal.app, set whichever font yo
 - In Preferences > General > Look for `Shell opens with`, select `Command` and paste `/bin/zsh`
 
 - In Preferences > General > Add your profile as the default profile by selecting `On startup open new window with profile` and select `{{CUSTOM_PROFILE_NAME}}`.
+
+- In View > "Allow mouse reporting", uncheck it to allow temorarly copy/paste to clipbord.
 
 ### vscode internal terminal
 
